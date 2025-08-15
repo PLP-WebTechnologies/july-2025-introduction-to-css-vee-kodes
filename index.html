@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PLP Week 3: Introduction to CSS</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>CSS Basics & The Box Model</h1>
+            <p>This page demonstrates core CSS concepts as I practice them for my assignment.</p> 
+        </header>
+
+        <section class="css-basics">
+            <h2>CSS Basics</h2>
+            <p><strong>CSS</strong> (<em>Cascading Style Sheets)</em> is a language used to style HTML elements for visual appeal. 
+                While HTML creates the structure of a webpage, CSS controls:</p>
+            <ul>
+                <li>Colors and fonts</li>
+                <li>spacing and positioning</li>
+                <li>Borders and backgrounds</li>
+                <li>Responsive layouts</li>
+            </ul>
+            <h3>Connecting CSS to HTML</h3>
+            <p>For this assignment, I'm using an external stylesheet. This means:</p>
+            <ol>
+                <li>All CSS rules live in a separate file <span style= "color: red;">(style.css)</span></li>
+                <li>The HTML file links to it in the head section</li>
+                <li>This approach keeps my code organized and reusable</li>
+            </ol>
+        </section>
+
+        <section class="css-box-model">
+            <h2>The CSS Box Model</h2>
+            <p>Every HTML element is a box with four layers:</p>
+            <ol>
+                <li><strong>Content</strong>: The actual text or media.</li>
+                <li><strong>Padding</strong>: Space <em>inside</em> the border.</li>
+                <li><strong>Border</strong>: The visible edge around padding.</li>
+                <li><strong>Margin</strong>: Space <em>outside</em> the border.</li>
+            </ol>
+
+            <h3>Box Model Examples</h3>         
+            <div class="example"></div>
+            <h4>Example 1: Simple Box</h4>
+            <p>This box shows padding (space inside) and margin (space outside).</p>
+            <div class="simple-box">
+                This is the content area. 
+                (The visible outline surrounding this box is the border). 
+                The space between this text and the border is padding.</div>
+            <p>The empty space around the box is margin.</p>                      
+
+            <div class="example"></div>
+            <h4>Example 2: A Simple Card</h4>
+            <div class="card">
+                <h5>Your Subscription Plan</h5>
+                <p>Premium Membership</p>
+                <p>Renews: Jan 2026</p>
+            </div>         
+
+            <div class="example"></div>
+            <h4>Example 3: Checkout-Styled Button</h4>
+            <div class="checkout-button">
+                <h5>Order Summary</h5>
+                <p>Total: $50.00</p>
+                <div class="btn">Checkout</div>
+            </div>           
+        </section>
+        <footer>
+            <p>&copy; 2025 Viola Chepchirchir</p>
+            <p>PLP Web Development | Introduction to CSS</p>
+        </footer>
+    </body>
+</html>
